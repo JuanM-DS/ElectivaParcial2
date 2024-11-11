@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <style>
+        /* Fondo en gradiente sutil */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            font-family: Arial, sans-serif;
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* Contenedor del contenido */
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            animation: slideIn 1.5s ease-out forwards;
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-size: 2.5em;
+            color: #3498db;
+            margin: 0;
+            animation: fadeInText 2s ease forwards;
+            opacity: 0;
+        }
+
+        /* Efecto de desvanecimiento del texto */
+        @keyframes fadeInText {
+            to { opacity: 1; }
+        }
+
+        /* Subtítulo en estilo cursiva */
+        p {
+            font-size: 1.1em;
+            color: #777;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Botón con efecto suave */
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Efecto hover en el botón */
+        .button:hover {
+            background-color: #2980b9;
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <p>Descubre contenido profesional y con estilo.</p>
+        <button class="button">Explorar</button>
+    </div>
+</body>
+</html>
